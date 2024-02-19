@@ -1,8 +1,7 @@
 #On choisit une debian
 FROM debian:11.6
 
-LABEL org.opencontainers.image.authors="github@diouxx.be"
-
+# LABEL org.opencontainers.image.authors="github@diouxx.be"
 
 #Ne pas poser de question à l'installation
 ENV DEBIAN_FRONTEND noninteractive
