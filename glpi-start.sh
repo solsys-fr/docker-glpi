@@ -45,8 +45,9 @@ LOCAL_GLPI_MAJOR_VERSION=$(echo $LOCAL_GLPI_VERSION | cut -d. -f1)
 ## Remove dots from version string
 LOCAL_GLPI_VERSION_NUM=${LOCAL_GLPI_VERSION//./}
 
-## Target value is GLPI 10.0.12
-TARGET_GLPI_VERSION="10.0.12"
+## Target value is the latest but can be override here
+#TARGET_GLPI_VERSION="10.0.12"
+TARGET_GLPI_VERSION=${VERSION_GLPI}
 TARGET_GLPI_VERSION_NUM=${TARGET_GLPI_VERSION//./}
 TARGET_GLPI_MAJOR_VERSION=$(echo $TARGET_GLPI_VERSION | cut -d. -f1)
 
