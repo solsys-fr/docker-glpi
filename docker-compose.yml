@@ -14,7 +14,7 @@ services:
 
 #GLPI Container
   glpi:
-    image: goovy/glpi:10.0.12
+    image: solsysfr/glpi:10.0.12
     container_name : glpi
     hostname: glpi
     ports:
