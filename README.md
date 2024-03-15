@@ -204,3 +204,11 @@ Modify this settings
 environment:
      TIMEZONE=Europe/Brussels
 ```
+
+# Maj de l'image :
+
+- dans le docker-compose, changer le num de l'image GLPI
+- commit et push
+- verifier publication sur hub
+
+

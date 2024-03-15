@@ -51,5 +51,5 @@ jobs:
         with:
           context: "{{defaultContext}}"
           push: true
-          tags: solsysfr/glpi:latest
+          tags: solsysfr/glpi:${{ steps.meta.outputs.tag }} , solsysfr/glpi:latest
           labels: ${{ steps.meta.outputs.labels }}
