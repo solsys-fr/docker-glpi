@@ -1,16 +1,15 @@
-version: "3.2"
 
 services:
 #MariaDB Container
   mariadb:
-    image: mariadb:11.2
+    image: mariadb:11.4
     container_name: mariadb
     hostname: mariadb
     volumes:
       - /var/lib/mysql:/var/lib/mysql
     env_file:
       - ./mariadb.env
-    restart: always
+    restart: unless-stopped 
 
 #GLPI Container
   glpi:
@@ -25,4 +24,4 @@ services:
       - /var/www/html/glpi/:/var/www/html/glpi
     environment:
       - TIMEZONE=Europe/Paris
-    restart: always
+    restart: unless-stopped 
